@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1 rem =10 px*/
+    /*Se usa para mantener el tamaño de fuentes del maqueteado 
+    original y poder tener un diseño responsivo en 
+    los tamaños de letras*/
+    /*de igual manera se pueden sustituir todos los valores 
+    de pixeles por rems para tener un diseño mas responsivo*/
+}
+
+*,
+*::after,
+::before {
+    box-sizing: border-box;
+    /*Se usa para hacer que los componenetes no sobrepasen 
+    el tamaño asignado */
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/*Globales */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-navegacion {
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 0.1rem;
+}
+
+img {
+    max-width: 100%;
+    /*Se hace para que todas las imagenes no se desborden 
+    del componente donde se muestran     */
+    display: block;
+    /*Al utilizar max-width:100% las iamgenes no suelen 
+    cubrir el 100% del componete asique se cambiar la 
+    forma en que se muestra para que se bubra todo el espacio*/
+}
+
+/*header y navegacion*/
+.nombre-sitio {
+    margin: 0 5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.nombre-sitio span {
+    color: #e1e1e1;
+}
+
+.nav-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.hero {
+    background-image: url(/imgs/principal.jpg);
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 2fr;
+    gap: 2rem;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    padding: 2rem;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
